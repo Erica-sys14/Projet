@@ -2,7 +2,7 @@
 function nav_item (string $lien, string $titre): string
 {
     $html = '<li class="nav-item">
-                <a class="nav-link" href="/indexe.php">Accueil</a>
+                <a class="nav-link" href="/index.php">Accueil</a>
             </li>' ;
 
 }
@@ -31,8 +31,8 @@ function nav_item (string $lien, string $titre): string
         <ul class="navbar-nav mr-auto">
             <?= nav_item('/index.php', 'Accueil'); ?>
             <?= nav_item('/Contact.php', 'Nous contacter'); ?>
-            <li class="nav-item  <?php if ($_SERVER['SCRIPT_NAME'] === '/indexe.php'): ?>active<?php endif; ?>">
-                <a class="nav-link" href="/indexe.php">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item  <?php if ($_SERVER['SCRIPT_NAME'] === '/index.php'): ?>active<?php endif; ?>">
+                <a class="nav-link" href="/index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" <?php if ($_SERVER['SCRIPT_NAME'] === '/Contact.php'): ?>active<?php endif; ?>">
                 <a class="nav-link" href="/Contact.php">Contact</a>
